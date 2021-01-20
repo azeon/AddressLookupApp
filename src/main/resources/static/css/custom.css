@@ -1,0 +1,11 @@
+
+
+.column {
+  margin: auto; 	/* Horizontally centres the element */
+  text-align: center;	/* Centres the text inside the element */
+  width: 33.33%;
+  padding: 10px;
+/*   border: 3px solid #73AD21; */
+/* border: 3px solid #3198EB; */
+border: 3px solid #22C5BE;
+}

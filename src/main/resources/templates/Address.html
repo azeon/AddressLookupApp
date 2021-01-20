@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
+<head> 
+    
+    <title>Address Lookup</title>
+
+    <meta http-equiv="Content-Type" content="text/html" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+    <style>
+        h1 {
+	        font-family: Helvetica;
+            font-size: 2em;
+            font-weight: bold;
+            color: #777777;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        h2 {
+	        font-family: Helvetica;
+            font-size: 15px;
+            /*font-weight: bold;*/
+            color: #777777;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        mark.black {
+            color:#000000;
+            background: none;
+        }
+
+        .column {
+            font-family: Helvetica;
+            margin: auto; 	/* Horizontally centres the element */
+            text-align: center;	/* Centres the text inside the element */
+            width: 33.33%;
+            padding: 10px;
+            border: 3px solid #22C5BE;
+        }
+
+    </style>
+
+
+<!-- <link href="/css/custom.css" th:href="@{/css/custom.css}" rel="stylesheet" type="text/css" /> -->
+
+</head>
+<body>
+    <h1>Address Lookup</h1>
+
+    <div class="column">
+    <form action="#" th:action="@{/address}" th:object="${address}" method="post">
+    	<p>Street Number: <input id="streetNumber" type="text" th:field="*{streetNumber}" required/></p>
+        <p>Street Name: <input id="streetName" type="text" th:field="*{streetName}" required/></p>
+        <p><input type="submit" value="Submit" /> <input type="reset" value="Reset" /></p>
+    </form>
+    </div>
+
+    <h2>
+        Application Type: <mark class="black">Spring Boot</mark><br>
+        Calling endpoint: <mark class="black">Boomi API</mark><br>
+        Authentication: <mark class="black">Oauth2/JWT</mark><br>
+        Auth Type: <mark class="black">Client Credentials</mark><br>
+        Identity Provider: <mark class="black">Okta</mark>
+    </h2>
+
+    <script>
+        document.getElementById('streetNumber').value = "";
+        document.getElementById('streetName').value = "";
+    </script>
+</body>
+</html>

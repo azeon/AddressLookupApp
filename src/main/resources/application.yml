@@ -1,0 +1,10 @@
+example:
+    serverBaseUrl: http://api.boomiapj.com:9077
+    oauth2:
+        client:
+            grant-type: client_credentials
+            clientId: 0oajnmq2c5Vv2ZJpO0h7
+            clientSecret: 2h8O7lHne_spSFFyPchjsUQTqQ1YA7I8J38fgo-A
+            accessTokenUri: https://dev-948473.oktapreview.com/oauth2/default/v1/token
+            scope: myScope
+            x-api-key: b81d703a-ecab-4305-9550-8804caf4e31a 
