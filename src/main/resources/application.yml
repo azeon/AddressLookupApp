@@ -1,3 +1,5 @@
+server:
+  port : 9050
 example:
     serverBaseUrl: http://api.boomiapj.com:9077
     oauth2:
