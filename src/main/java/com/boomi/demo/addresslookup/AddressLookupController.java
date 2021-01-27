@@ -81,7 +81,7 @@ public class AddressLookupController {
         return response.getBody();
     }
 
-	@GetMapping("/address")
+	@GetMapping("/")
 	public String addressSearchForm(Model model) {
 		model.addAttribute("address", new Address());
 	
